@@ -1,6 +1,6 @@
 {
   "name": "redux-saga-promise",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a redux middleware to handle dispatch for \"trigger\" actions",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -8,8 +8,9 @@
   "scripts": {
     "test": "jest",
     "build": "npm-run-all -p build-dist build-es",
-    "build-dist": "BABEL_ENV=dist babel src -d dist",
-    "build-es": "BABEL_ENV=es babel src -d es"
+    "build-dist": "BABEL_ENV=lib babel src -d lib",
+    "build-es": "BABEL_ENV=es babel src -d es",
+    "prepublish": "npm-run-all build"
   },
   "keywords": [
     "redux",
