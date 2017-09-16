@@ -1,0 +1,47 @@
+{
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": "current",
+              "browsers": "last 2 versions"
+            }
+          }
+        ],
+        "flow"
+      ]
+    },
+    "dist": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": "current",
+              "browsers": "last 2 versions"
+            }
+          }
+        ],
+        "flow"
+      ]
+    },
+    "es": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": "current",
+              "browsers": "last 2 versions"
+            },
+            "modules": false
+          }
+        ],
+        "flow"
+      ]
+    }
+  }
+}
