@@ -1,6 +1,6 @@
 {
   "name": "redux-saga-promise",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a redux middleware to handle dispatch for \"trigger\" actions",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -29,6 +29,7 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-jest": "^21.0.2",
     "jest": "^21.1.0",
+    "npm-run-all": "^4.1.1",
     "redux": "^3.7.2",
     "redux-saga": "^0.15.6",
     "regenerator-runtime": "^0.11.0"
