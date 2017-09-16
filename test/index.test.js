@@ -1,7 +1,7 @@
 import {createStore,applyMiddleware} from "redux"
 import createSagaMiddleware from "redux-saga"
 import {take,put} from "redux-saga/effects"
-import createMiddleware from "./index"
+import createMiddleware from "../src/index"
 let store = null;
 const reducer = (state = {actions:[]}, action) => {
     return {actions:[action,...state.actions]}

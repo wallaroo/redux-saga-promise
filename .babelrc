@@ -14,7 +14,7 @@
         "flow"
       ]
     },
-    "dist": {
+    "lib": {
       "presets": [
         [
           "env",
