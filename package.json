@@ -1,6 +1,6 @@
 {
   "name": "redux-saga-promise",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "a redux middleware to handle dispatch for \"trigger\" actions",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -10,7 +10,8 @@
     "build": "npm-run-all -p build-dist build-es",
     "build-dist": "BABEL_ENV=lib babel src -d lib",
     "build-es": "BABEL_ENV=es babel src -d es",
-    "prepublish": "npm-run-all build"
+    "prepublish": "npm-run-all -s flow test build",
+    "flow": "flow"
   },
   "keywords": [
     "redux",
@@ -20,15 +21,13 @@
   ],
   "author": "wallaroo",
   "license": "ISC",
-  "dependencies": {
-    "dot-prop": "^4.2.0"
-  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-jest": "^21.0.2",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-jest": "^21.0.2",
+    "flow-bin": "^0.57.3",
     "jest": "^21.1.0",
     "npm-run-all": "^4.1.1",
     "redux": "^3.7.2",

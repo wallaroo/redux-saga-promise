@@ -1,4 +1,4 @@
-import dot from "dot-prop";
+import dot from "./dot-prop";
 
 export default function createMiddleware() {
     var opt = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { actionProperty: "meta.async" };
